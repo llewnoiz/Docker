@@ -110,7 +110,7 @@ variable "user_data" {
     sudo chmod 755 /usr/local/bin/docker-compose
     mkdir -p /home/gitlab
     git clone https://github.com/llewnoiz/Docker.git /home/gitlab
-    cd /home/gitlab
+    cd /home/gitlab/gitlab
     sudo docker-compose -f ./docker-compose.yml up -d    
   EOT 
 }
