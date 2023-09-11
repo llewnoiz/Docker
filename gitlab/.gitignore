@@ -2,4 +2,6 @@
 ./data
 ./logs
 ./runner
+.terraform
+.terraform.lock.hcl
 bes-cm-ane2-key
