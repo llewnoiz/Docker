@@ -106,7 +106,7 @@ variable "user_data" {
     sudo service docker start
     sudo systemctl enable docker.service
     sudo systemctl restart docker.service   
-    sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo curl -L "https://github.com/docker/compose/releases/download/2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod 755 /usr/local/bin/docker-compose
     mkdir -p /home/gitlab
     git clone https://github.com/llewnoiz/Docker.git /home/gitlab
