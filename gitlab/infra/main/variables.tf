@@ -72,8 +72,8 @@ variable "gitlab_security_ingress_rule" {
         cidr_blocks = "0.0.0.0/0"
         },
         {
-        from_port   = 8080
-        to_port     = 8080
+        from_port   = 8929
+        to_port     = 8929
         protocol    = "tcp"
         description = "web service"
         cidr_blocks = "0.0.0.0/0"
@@ -111,6 +111,7 @@ variable "user_data" {
     mkdir -p /home/gitlab
     git clone https://github.com/llewnoiz/Docker.git /home/gitlab
     cd /home/gitlab/gitlab
+    sudo chmod 755 * -R
     sudo docker-compose -f ./docker-compose.yml up -d    
   EOT 
 }

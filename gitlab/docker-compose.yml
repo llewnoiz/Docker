@@ -5,7 +5,7 @@ services:
     restart: always
     hostname: 'localhost'
     ports:
-      - '8080:8080'
+      - '8929:8929'
       - '422:22'
     volumes:
       - './config:/etc/gitlab'
