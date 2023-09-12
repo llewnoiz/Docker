@@ -1,22 +1,6 @@
-data "aws_ami" "ubuntu" {
-  most_recent = true
-
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
-  }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-
-  owners = ["099720109477"] # Canonical
-}
-
 module "ec2_instance" {
   source  = "./modules/terraform-aws-ec2-instance"
-  ami           = data.aws_ami.ubuntu.id
+  ami           = local.gitlab_ami
   name = "${local.name}-gitlab-instance"
  
   instance_type          = local.gitlab_instance_type
