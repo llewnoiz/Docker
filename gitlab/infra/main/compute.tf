@@ -1,7 +1,7 @@
 module "ec2_instance" {
   source  = "./modules/terraform-aws-ec2-instance"
   ami           = local.gitlab_ami
-  name = "${local.name}-gitlab-instance"
+  name = "${local.name}-instance"
  
   instance_type          = local.gitlab_instance_type
   ignore_ami_changes = true

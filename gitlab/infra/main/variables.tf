@@ -33,7 +33,7 @@ variable "key_pair_name" {
 }
 
 variable "project_name" {
-  default = "bes-cm"
+  default = "bes-cm-gitlab"
   type = string
 }
 
