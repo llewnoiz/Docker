@@ -52,3 +52,7 @@ jobs:
       - name: Terraform apply
         id: apply
         run: terraform apply -auto-approve
+
+      - name: gitlab key show
+        id: show
+        run: terraform output -raw git_pem

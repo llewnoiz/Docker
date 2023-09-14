@@ -26,6 +26,10 @@ output "gitlab_security_group_id" {
   value = module.security.security_group_id
 }
 
-# output "gitlab_external_ipaddr" {
-#   value = module.ec2_instance.public_ip
-# }
+output "gitlab_external_ipaddr" {
+  value = module.ec2_instance.public_ip
+}
+
+output "git_pem" {
+  value = nonsensitive(tls_private_key.this.private_key_pem)
+}
