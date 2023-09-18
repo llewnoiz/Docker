@@ -43,7 +43,7 @@ variable "vpc_cidr" {
 }
 
 variable "gitlab_security_group_name" {
-  default = "gitlab security"
+  default = "gitlab sg"
   type = string
 }
 
