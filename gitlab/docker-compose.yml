@@ -3,10 +3,10 @@ services:
   web:
     image: 'gitlab/gitlab-ce:15.0.2-ce.0'
     restart: always
-    hostname: '3.35.205.52'
+    hostname: 'http://bzcloud.net'
     ports:
-      - '8929:8929'
-      - '422:22'
+      - '80:80'
+      - '22:22'
     volumes:
       - './config:/etc/gitlab'
       - './logs:/var/log/gitlab'

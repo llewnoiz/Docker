@@ -65,24 +65,10 @@ variable "gitlab_external_ip" {
 variable "gitlab_security_ingress_rule" {
   default = [
         {
-        from_port   = 422
-        to_port     = 422
-        protocol    = "tcp"
-        description = "git"
-        cidr_blocks = "0.0.0.0/0"
-        },
-        {
-        from_port   = 22
-        to_port     = 22
-        protocol    = "tcp"
-        description = "ssh"
-        cidr_blocks = "0.0.0.0/0"
-        },
-        {
-        from_port   = 8929
-        to_port     = 8929
-        protocol    = "tcp"
-        description = "web service"
+        from_port   = -1
+        to_port     = -1
+        protocol    = "-1"
+        description = "all"
         cidr_blocks = "0.0.0.0/0"
         }
     ]
