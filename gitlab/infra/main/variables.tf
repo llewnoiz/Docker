@@ -84,6 +84,13 @@ variable "gitlab_security_ingress_rule" {
         protocol    = "tcp"
         description = "git-web"
         cidr_blocks = "58.151.93.2/32"
+        },
+        {
+        from_port   = 443
+        to_port     = 443
+        protocol    = "tcp"
+        description = "git-web-ssl"
+        cidr_blocks = "58.151.93.2/32"
         }
     ]
   

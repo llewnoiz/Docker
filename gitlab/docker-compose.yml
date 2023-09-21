@@ -6,6 +6,7 @@ services:
     hostname: 'gitlab.bzcloud.net'
     ports:
       - '80:80'
+      - '443:443'
       - '422:22'
     volumes:
       - './config:/etc/gitlab'
