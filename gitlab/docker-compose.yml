@@ -3,7 +3,7 @@ services:
   web:
     image: 'gitlab/gitlab-ce:15.0.2-ce.0'
     restart: always
-    hostname: 'bzcloud.net'
+    hostname: 'gitlab.bzcloud.net'
     ports:
       - '80:80'
       - '422:22'
