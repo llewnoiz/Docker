@@ -20,11 +20,11 @@ variable "tfstate_lock" {
 
 variable "tags" {
     default = {
-        user: "hyunmin",
-        enddate: "2023/12/31",
-        purpose: "project dev"
+        Name = "hyunmin",
+        team = "skmfg"
+        enddate =  "2023/12/31",
+        purpose =  "project dev"
     } 
-    type = object({})
 }
 
 variable "key_pair_name" {

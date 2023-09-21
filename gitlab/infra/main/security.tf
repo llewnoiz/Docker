@@ -7,4 +7,6 @@ module "security" {
 
     ingress_with_cidr_blocks = local.gitlab_security_ingress_rule
     egress_with_cidr_blocks = local.gitlab_security_egress_rule
+
+    tags = local.tags
 }

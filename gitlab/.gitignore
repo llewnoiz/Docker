@@ -4,4 +4,6 @@
 ./runner
 .terraform
 .terraform.lock.hcl
+terraform.tfstate.backup
+terraform.tfstate
 bes-cm-ane2-key
